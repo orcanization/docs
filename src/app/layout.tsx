@@ -1,7 +1,8 @@
-import { Footer, Layout, Navbar } from 'nextra-theme-docs'
-import { Banner, Head } from 'nextra/components'
-import { getPageMap } from 'nextra/page-map'
-import 'nextra-theme-docs/style.css'
+import {Footer, Layout, Navbar} from "nextra-theme-docs"
+import {Banner, Head} from "nextra/components"
+import {getPageMap} from "nextra/page-map"
+import "nextra-theme-docs/style.css"
+import React from "react"
 
 export const metadata = {
     // Define your metadata here
@@ -16,11 +17,11 @@ const navbar = (
 )
 const footer = <Footer>MIT {new Date().getFullYear()} © Nextra.</Footer>
 
-export default async function RootLayout({ children }) {
+export default async function RootLayout({children}: { children: React.ReactNode }) {
     return (
         <html lang="en" dir="ltr"
             // Suggested by `next-themes` package https://github.com/pacocoursey/next-themes#with-app
-            suppressHydrationWarning
+              suppressHydrationWarning
         >
         <Head>
         </Head>

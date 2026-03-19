@@ -1,2 +1,34 @@
 # Getting Started
-To get started with the plugin, you can follow these steps:
+Right now the easiest way to develop a plugin is to develop your plugin while its in the plugin folder. For this you need a running instance of orca.
+
+Install orca.
+
+```bash copy
+git clone git@github.com:orcanization/orca.git
+git checkout feat/nextjs
+npm install
+```
+
+Create a new plugin by using the plugin template https://github.com/orcanization/plugin-template
+
+Clone your plugin to the plugin folder
+
+```bash copy
+cd plugins
+git clone ssh://github.com/your-username/your-plugin.git
+```
+
+Bundle your plugin
+
+```bash copy
+cd your-plugin
+npm install
+npm run plugin-build
+```
+
+Run orca in development mode
+
+```bash copy
+npm run dev
+```
+
